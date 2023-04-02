@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+body {
+    background: lightgray;
+}
+img {
+    background-color: rgb(103, 103, 222);
+}
+h1{
+   padding-top: 15px;
+   margin-left: 10px;
+}
+.items {
+    display: grid;
+    grid-template-columns: repeat(5, 5fr);
+    padding: 30px 20px;
+    grid-column-gap: 30px;
+}
+
+.item  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    
+    
+
+}
+.item button {
+    padding: 5px 30px;
+    border: none;
+    outline: none;
+    display: block;
+    margin: 0 auto;
+
+}
+@media screen and (max-width: 1000px) {
+    .items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+p{
+    margin-left: 15px;
+    margin-right:10px;
+    margin-bottom: 10px;
+}
